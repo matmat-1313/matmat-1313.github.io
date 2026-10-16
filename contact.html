@@ -1,0 +1,181 @@
+<!doctype html>
+
+
+<html lang="fr">
+    
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  <title>Contact — D’hier à aujourd’hui 91</title>
+    
+  <meta name="description" content="Contactez l’association D’hier à aujourd’hui 91 à Ormoy-la-Rivière pour les ateliers de retouche photo et de généalogie.">
+    
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    
+  <link rel="stylesheet" href="assets/css/style.css">
+    
+  <script src="assets/js/main.js" defer></script>
+
+    
+  <style>
+    .contact-intro{max-width:720px;margin:0 auto 24px;color:var(--muted,#66645e)}
+    .contact-card{max-width:850px;margin:0 auto;padding:clamp(20px,4vw,36px);border:1px solid var(--line,#ded8ce);background:var(--white,#fff);box-shadow:0 12px 32px rgba(40,32,20,.06)}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .contact-field{display:flex;flex-direction:column;gap:7px;min-width:0}
+    .contact-field.full{grid-column:1/-1}
+    .contact-field label{font-weight:700;color:var(--ink,#292721);font-size:.92rem}
+    .contact-field input,.contact-field select,.contact-field textarea{box-sizing:border-box;width:100%;padding:12px 13px;border:1px solid #c9c2b6;border-radius:2px;background:#fffdf8;color:var(--ink,#292721);font:inherit;transition:border-color .2s,box-shadow .2s}
+    .contact-field input:focus,.contact-field select:focus,.contact-field textarea:focus{outline:none;border-color:var(--bronze,#a7793e);box-shadow:0 0 0 3px rgba(167,121,62,.15)}
+    .contact-field textarea{min-height:180px;resize:vertical}
+    .contact-actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:20px}
+    .contact-submit{border:0;border-radius:2px;padding:13px 20px;background:var(--bronze,#a7793e);color:#fff;font:inherit;font-weight:800;cursor:pointer;transition:transform .2s,background .2s}
+    .contact-submit:hover{transform:translateY(-1px);background:#88602f}
+    .contact-note{font-size:.86rem;color:#77766f}
+    .contact-direct{margin-top:22px;text-align:center;color:#66645e}
+    .contact-direct a{font-weight:700;color:var(--bronze,#8c6336);overflow-wrap:anywhere}
+    .contact-honeypot{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
+    @media(max-width:700px){.contact-grid{grid-template-columns:1fr}.contact-field.full{grid-column:auto}.contact-card{padding:18px}}
+  </style>
+
+    
+</head>
+
+    
+<body>
+    
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+    
+  <header class="site-header">
+
+    <div class="container header-inner">
+        
+      <a class="brand" href="index.html">
+          
+        <img class="brand-logo" src="assets/images/logo-association.png" alt="Logo de l’association D’hier à aujourd’hui 91">
+          
+        <span class="brand-name">D’hier <em>à</em> aujourd’hui <strong class="brand-number">91</strong><small>Ateliers de retouche photo & généalogie</small></span>
+      </a>
+        
+      <button class="menu-toggle" aria-expanded="false" aria-controls="navigation" aria-label="Ouvrir le menu"><span></span><span></span></button>
+        
+      <nav id="navigation" class="nav" aria-label="Navigation principale">
+          
+        <a href="photographie.html">Ateliers retouche photo</a>
+          
+        <a href="genealogie.html">Généalogie</a>
+          
+        <a href="actualites.html">Actualités</a>
+          
+        <a href="contact.html" aria-current="page">Contact</a>
+          
+        <a class="nav-cta" href="adhesion.html">Nous rejoindre <span aria-hidden="true">↗</span></a>
+          
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+      
+    <section class="page-hero compact-hero">
+        
+      <div class="container">
+          
+        <p class="eyebrow"><span class="eyebrow-line"></span> Parlons de vos projets</p>
+
+          
+        <h1>Contact</h1>
+          
+        <p class="hero-lede contact-intro">Une question sur l’association ? Une demande d’information ? Vous pouvez utiliser ce formulaire pour préparer votre message.</p>
+
+          <!--Une fois le message pres, le boutton rdirige automatiquement sur la boite de messagerie de l'utilisateur avec un mail pres a être envoyé-->
+      </div>
+    </section>
+
+    <section class="section-pad">
+      <div class="container">
+        <div class="contact-card">
+          <form id="contact-form">
+            <div class="contact-grid">
+              <div class="contact-field">
+                <label for="name">Nom et prénom</label>
+                <input id="name" name="name" type="text" autocomplete="name" required>
+              </div>
+              <div class="contact-field">
+                <label for="email">Adresse e-mail</label>
+                <input id="email" name="email" type="email" autocomplete="email" required>
+              </div>
+              <div class="contact-field full">
+                <label for="subject">Sujet</label>
+                <select id="subject" name="subject" required>
+                  <option value="">Choisir un sujet</option>
+                  <option>Question sur l’association</option>
+                  <option>Question sur la retouche photo</option>
+                  <option>Question sur la généalogie</option>
+                  <option>Idée de présentation</option>
+                  <option>Procédure d'adhésion</option>
+                  <option>Autre demande</option>
+                </select>
+              </div>
+              <div class="contact-field full">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <div class="contact-honeypot" aria-hidden="true">
+                <label for="website">Ne pas remplir ce champ</label>
+                <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+              </div>
+            </div>
+            <div class="contact-actions">
+              <button class="contact-submit" type="submit">Envoyer le message</button>
+              <span class="contact-note">Votre messagerie s’ouvrira avec le message prérempli.</span>
+            </div>
+          </form>
+        
+            <p class="contact-direct">Vous pouvez aussi écrire directement à <a href="mailto:matmat-1313_programation@outlook.fr">matmat-1313_programation@outlook.fr</a>.</p>
+
+            <!--Ne pas oublier de modifier l'adrese mail avant publication-->
+            
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+    
+        <a class="brand footer-brand" href="index.html"><img class="brand-logo" src="assets/images/logo-association.png" alt="Logo de l’association D’hier à aujourd’hui 91"><span class="brand-name">D’hier <em>à</em> aujourd’hui <strong class="brand-number">91</strong><small>Ateliers de retouche photo & généalogie</small></span></a>
+    
+        <p>À Ormoy-la-Rivière,<br>les images se retouchent et les histoires se transmettent.</p>
+    
+        <div class="footer-links">
+      
+          <a href="association.html">L’association</a><a href="photographie.html">Ateliers retouche photo</a><a href="genealogie.html">Généalogie</a><a href="actualites.html">Actualités</a><a href="adhesion.html">Adhésion</a><a href="contact.html" aria-current="page">Contact</a><a href="mentions-legales.html">Mentions légales</a><a href="politique-confidentialite.html">Confidentialité</a>
+    
+      </div>
+    </div>
+      
+    <div class="container footer-bottom"><span>© <span data-year>2026</span> D’hier à aujourd’hui 91</span><span>Conçu avec soin en Essonne</span></div>
+      
+  </footer>
+
+  <script>
+      
+    // Remplacez cette adresse par l'adresse officielle de l'association.
+      
+    const CONTACT_EMAIL = "matmat-1313_programation@outlook.fr";
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      if (document.getElementById('website').value) return;
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const subject = document.getElementById('subject').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const body = `Nom et prénom : ${name}\\nAdresse e-mail : ${email}\\n\\n${message}`;
+      const href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent('[D’hier à aujourd’hui 91] ' + subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = href;
+    });
+
+  </script>
+</body>
+</html>

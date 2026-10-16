@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://VOTRE-PSEUDO.github.io/sitemap.xml
