@@ -19,7 +19,7 @@ Site statique multipage en HTML, CSS et JavaScript, conçu pour GitHub Pages.
 - `association.html` : présentation
 - `photographie.html` : pratique et galerie
 - `genealogie.html` : archives et transmission
-- `actualites.html` : annonces
+- `credits-sources.html` : crédits et sources documentaires (lien uniquement en pied de page)
 - `adhesion.html` : contact / adhésion
 - `mentions-legales.html`, `politique-confidentialite.html`
 - `assets/css/style.css` : styles responsives
